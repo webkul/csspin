@@ -1,0 +1,32 @@
+/*Round Spinner*/
+.cp-round:before{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@bgColor, @bgColor, @bgColor, @bgColor);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cp-round:after{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@primaryColor, transparent, transparent, transparent);
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: cp-round-animate @speed3x ease-in-out infinite;
+}
+
+/*Round Spinner Animation*/
+
+@keyframes cp-round-animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

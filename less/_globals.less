@@ -1,0 +1,31 @@
+/*Global Variables*/
+
+/*Colors*/
+@primaryColor: #F56151;
+@bgColor: #bababa;
+@boxSize : 48px;
+
+/*Speed*/
+@speed2x: 2s;
+@speed3x: 1s;
+@speed4x: .5s;
+
+/*Global Mixins*/
+.bounding-box(@width, @height){
+	width: @width;
+	height: @height;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.border(@top, @right, @bottom, @left){
+	border-top: solid @boxSize/8 @top;
+	border-right: solid @boxSize/8 @right;
+	border-bottom: solid @boxSize/8 @bottom;
+	border-left: solid @boxSize/8 @left;
+}
+
+.cp-spinner{
+	.bounding-box(@boxSize, @boxSize);
+}

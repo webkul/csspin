@@ -1,0 +1,33 @@
+.cp-wrapper{
+	text-align:center;
+	margin: 45px auto;
+	width: 70%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1{
+	color: #00ACC1;
+	font-size: 2.4em;
+}
+h1 span{
+	color: #00838F;
+}
+p{
+	color: #4a5b6c;
+	font-size: 1.2em;
+	margin-bottom: 50px;
+}
+.cp-spinner-block{
+	display: inline-block;
+}
+.cp-spinner-block span{
+	color: #4a5b6c;
+	display: block;
+	padding: 5px 0px;
+}
+.cp-spinner-block pre{
+	font-size: .75em;
+	background-color: #f0f0f0;
+	padding: 4px 7px;
+	border-radius: 2px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
