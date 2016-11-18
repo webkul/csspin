@@ -1,0 +1,60 @@
+/*Balls Spinner*/
+.cp-balls{
+	animation: cp-balls-animate @speed3x linear infinite;
+}
+
+.cp-balls:before{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize/2, @boxSize/2);
+	background-color: @firstColor;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: cp-balls-animate-before @speed3x ease-in-out infinite;
+}
+
+.cp-balls:after{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize/2, @boxSize/2);
+	background-color: @thirdColor;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	animation: cp-balls-animate-after @speed3x ease-in-out infinite;
+}
+
+/*Balls Spinner Animation*/
+@keyframes cp-balls-animate{
+	0%{
+		transform: rotate0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cp-balls-animate-before{
+	0%{
+		transform: translate(-5px, -5px);
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+	100%{
+		transform: translate(-5px, -5px);
+	}
+}
+
+@keyframes cp-balls-animate-after{
+	0%{
+		transform: translate(5px, 5px);
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+	100%{
+		transform: translate(5px, 5px);
+	}
+}
