@@ -1,7 +1,6 @@
 .cp-wrapper{
-	text-align:center;
+	text-align: center;
 	margin: 45px auto;
-	width: 100%;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 h1{
@@ -18,6 +17,7 @@ p{
 }
 .cp-spinner-block{
 	display: inline-block;
+	width: 40%;
 	margin: 10px 20px;
 }
 .cp-spinner-block span{
@@ -31,4 +31,41 @@ p{
 	padding: 4px 7px;
 	border-radius: 2px;
 	font-family: "Lucida Console", Monaco, monospace;
+	display: inline-block;
+}
+
+@media only screen and (max-width: 1024px){
+	.cp-wrapper{
+		width: 100%;
+	}
+	.cp-spinner-block{
+	display: block;
+	width: 90%;
+	margin: 40px 5%;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1400px){
+	.cp-wrapper{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 1500px){
+	.cp-wrapper{
+		width: 90%;
+	}
+	.cp-spinner-block{
+	display: inline-block;
+	width: 30%;
+	margin: 10px 20px;
+}
+}
+@media only screen and (min-width: 1700px){
+	.cp-wrapper{
+		width: 70%;
+	}
+	.cp-spinner-block{
+	display: inline-block;
+	width: 30%;
+	margin: 10px 20px;
+}
 }
