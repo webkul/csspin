@@ -3,7 +3,9 @@ CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code
 
 ## Installation
 Install CSSPIN with **Bower** Package Manager     
-```bower install csspin```
+```
+bower install csspin
+```
 
 ## Less File Structure 
 ```
@@ -24,7 +26,7 @@ Install CSSPIN with **Bower** Package Manager
 ## CSS File Structure   
 ```
 ./css/    
-  ... css/csspin-xxxx.css 
+  ... csspin-xxxx.css 
 ./csspin.css  
 ```
 
