@@ -13,17 +13,17 @@ Install CSSPIN with **Bower** Package Manager
   ... csspin.less
 `
 
-## How Less Stucture Works
+## How Less Stucture Works   
 ** Less files `with _` are partials and have actual magic  
 ** Less files `without _` only imports partials   
 ** Less files named `csspin-xxxx.less` imports `_globals.less` and respective `_partial.less`   
 ** Less files named `csspin-xxxx.less` acts as an individual module and can be compiled to `css/csspin-xxxx.css` for individual use   
 ** Less file named `csspin.less` imports all the partials and is compiled to `csspin.css`  
 
-## CSS File Structure
-`./
-  ... csspin.css
-  ... css/csspin-xxxx.css
+## CSS File Structure   
+`./   
+  ... csspin.css   
+  ... css/csspin-xxxx.css   
 `
 
 ## How CSS Stucture Works
