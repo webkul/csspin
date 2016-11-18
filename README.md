@@ -19,7 +19,7 @@ bower install csspin
   ... csspin.less   
 ```
 
-## How Less Stucture Works   
+## How Less Stucture Works?   
 * Less files ```with _``` are partials and have actual magic  
 * Less files ```without _``` only imports partials   
 * Less files named ```csspin-xxxx.less``` imports ```_globals.less``` and respective ```_partial.less```   
@@ -33,7 +33,7 @@ bower install csspin
 ./csspin.css  
 ```
 
-## How CSS Stucture Works
+## How CSS Structure Works?   
 * CSS File named ```csspin.css``` consists CSS for all the spinners
 * CSS File named ```csspin-xxxx``` consists css of respective spinners
 
