@@ -5,7 +5,7 @@
 }
 h1{
 	color: #00ACC1;
-	font-size: 2.4em;
+	font-size: 2.8em;
 }
 h1 span{
 	color: #00838F;
@@ -13,7 +13,20 @@ h1 span{
 p{
 	color: #4a5b6c;
 	font-size: 1.2em;
-	margin-bottom: 50px;
+}
+a:link, a:active, a:visited{
+	color: #3F51B5;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	border-bottom: dashed 1px #3F51B5;
+	margin: 0px 10px;
+}
+a:hover{
+	border-bottom: none;
+}
+.cp-spinners{
+		margin: 50px auto;
 }
 .cp-spinner-block{
 	display: inline-block;
