@@ -1,0 +1,46 @@
+/*Pinwheel Spinner*/
+
+.cp-pinwheel{
+	border-radius: 50%;
+	.bounding-box(@boxSize, @boxSize);
+	.border(@boxSize/2, @firstColor, @secondColor, @thirdColor, @fourthColor);
+	animation: cp-pinwheel-animate @speed3x linear infinite;
+}
+
+/*Pinwheel Spinner Animation*/
+
+@keyframes cp-pinwheel-animate{
+	0%{
+		border-top-color: @firstColor;
+		border-right-color: @secondColor;
+		border-bottom-color: @thirdColor;
+		border-left-color: @fourthColor;
+		transform: rotate(0deg);
+	}
+	25%{
+		border-top-color: @thirdColor;
+		border-right-color: @fourthColor;
+		border-bottom-color: @firstColor;
+		border-left-color: @secondColor;
+	}
+	50%{
+		border-top-color: @firstColor;
+		border-right-color: @secondColor;
+		border-bottom-color: @thirdColor;
+		border-left-color: @fourthColor;
+	}
+	75%{
+		border-top-color: @thirdColor;
+		border-right-color: @fourthColor;
+		border-bottom-color: @firstColor;
+		border-left-color: @secondColor;
+	}
+	100%{
+		border-top-color: @firstColor;
+		border-right-color: @secondColor;
+		border-bottom-color: @thirdColor;
+		border-left-color: @fourthColor;
+		transform: rotate(360deg);
+	}
+
+}

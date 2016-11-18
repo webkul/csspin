@@ -1,9 +1,15 @@
 /*Global Variables*/
-
 /*Colors*/
 @primaryColor: #F56151;
 @bgColor: #bababa;
-@boxSize : 48px;
+@firstColor: #0fd6ff;
+@secondColor:#58bd55;
+@thirdColor: #eb68a1;
+@fourthColor: #f3d53f;
+@transparent: transparent;
+
+/*Box Size*/
+@boxSize: 48px;
 
 /*Speed*/
 @speed2x: 2s;
@@ -19,13 +25,14 @@
 	position: relative;
 }
 
-.border(@top, @right, @bottom, @left){
-	border-top: solid @boxSize/8 @top;
-	border-right: solid @boxSize/8 @right;
-	border-bottom: solid @boxSize/8 @bottom;
-	border-left: solid @boxSize/8 @left;
+.border(@borderWidth, @top, @right, @bottom, @left){
+	border-top: solid @borderWidth @top;
+	border-right: solid @borderWidth @right;
+	border-bottom: solid @borderWidth @bottom;
+	border-left: solid @borderWidth @left;
 }
 
+/*Global Spinner*/
 .cp-spinner{
 	.bounding-box(@boxSize, @boxSize);
 }

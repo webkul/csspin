@@ -3,7 +3,7 @@
 	border-radius: 50%;
 	content: " ";
 	.bounding-box(@boxSize, @boxSize);
-	.border(@bgColor, @bgColor, @bgColor, @bgColor);
+	.border(@boxSize/8, @bgColor, @bgColor, @bgColor, @bgColor);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -13,7 +13,7 @@
 	border-radius: 50%;
 	content: " ";
 	.bounding-box(@boxSize, @boxSize);
-	.border(@primaryColor, transparent, transparent, transparent);
+	.border(@boxSize/8, @primaryColor, @transparent, @transparent, @transparent);
 	position: absolute;
 	top: 0;
 	left: 0;
