@@ -61,6 +61,9 @@ a:hover{
 	.cp-wrapper{
 		width: 70%;
 	}
+	.cp-spinner-block{
+	margin: 40px auto;
+}
 }
 @media only screen and (min-width: 1500px){
 	.cp-wrapper{
