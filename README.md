@@ -1,6 +1,9 @@
 # CSSPIN
 CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code
 
+## Demo
+Check out [Spinners in Motion](https://webkul.github.io/csspin/)
+
 ## Installation
 Install CSSPIN with **Bower** Package Manager     
 ```
