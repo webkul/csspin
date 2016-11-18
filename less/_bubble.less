@@ -1,0 +1,75 @@
+/*Bubble Spinner*/
+.cp-bubble{
+	border-radius: 50%;
+	.bounding-box(@boxSize/2, @boxSize/2);
+	background: @secondColor;
+ 	animation: cp-bubble-animate @speed3x linear infinite;
+}
+
+.cp-bubble:before{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize/2, @boxSize/2);
+	background-color: @secondColor;
+	position: absolute;
+	left: -30px;
+	animation: cp-bubble-animate-before @speed3x ease-in-out infinite;
+}
+
+.cp-bubble:after{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize/2, @boxSize/2);
+	background-color: @secondColor;
+	position: absolute;
+	right: -30px;
+	animation: cp-bubble-animate-after @speed3x ease-in-out infinite;
+}
+
+/*Bubble Spinner Animation*/
+@keyframes cp-bubble-animate{
+	0% {
+		opacity: .5;
+		transform: scale(1) translateX(0px);
+	}
+	25%{
+		opacity: 1;
+		transform: scale(1.1) translateX(-15px);	
+	}
+	50%{
+		opacity: 1;
+		transform: scale(1.2) translateX(15px);
+	}
+	100%{
+		opacity: .5;
+		transform: scale(1) translateX(0px);
+	}
+}
+
+@keyframes cp-bubble-animate-before{
+	0%{
+		opacity: .5;
+		transform: scale(1);
+	}
+	25%{
+		transform: scale(1.1);
+	}
+	50%, 100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes cp-bubble-animate-after{
+	0%,50%{
+		opacity: .5;
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	75%, 100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
