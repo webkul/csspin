@@ -1,0 +1,36 @@
+/*Eclipse Spinner*/
+.cp-eclipse{
+	.bounding-box(@boxSize/4, @boxSize/4);
+	border-radius: 50%;
+	background: @fourthColor;
+	margin: @boxSize/4;
+	animation: cp-eclipse-animate @speed3x ease-out infinite;
+}
+.cp-eclipse:before{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@boxSize/8, @transparent, @fourthColor, @transparent, @transparent);
+	position: absolute;
+	top: -18px;
+	left: -18px;
+}
+.cp-eclipse:after{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@boxSize/8, @transparent, @transparent, @transparent, @fourthColor);
+	position: absolute;
+	top: -18px;
+	right: -18px;
+}
+
+/*Eclipse Spinner Animation*/
+@keyframes cp-eclipse-animate{
+	0%{
+		transform: rotate(0deg);
+	}	
+	100%{
+		transform: rotate(360deg);
+	}
+}
