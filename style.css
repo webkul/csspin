@@ -14,6 +14,12 @@ p{
 	color: #4a5b6c;
 	font-size: 1.2em;
 }
+p.credits{
+	font-size: 1em; 
+}
+p.credits a{
+	margin: 0px;
+}
 a:link, a:active, a:visited{
 	color: #3F51B5;
 	text-decoration: none;
