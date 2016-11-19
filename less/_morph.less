@@ -1,0 +1,26 @@
+/*Morph Spinner*/
+.cp-morph{
+	.bounding-box(@boxSize, @boxSize);
+	background: @firstColor; 
+	animation: cp-morph-animate @speed3x linear infinite;
+}
+
+/*Morph Spinner Animation*/
+@keyframes cp-morph-animate{
+	0%{
+		transform: rotate(0deg) scale(1);
+		border-radius: 0%;
+		background: @fourthColor;
+
+	}
+	25%, 75%{
+		transform: rotate(180deg) scale(.4);
+		border-radius: 50%;
+		background: @firstColor;
+	}	
+	100%{
+		transform: rotate(360deg) scale(1);
+		border-radius: 0%;
+		background: @fourthColor;
+	}
+}
