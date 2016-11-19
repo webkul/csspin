@@ -38,4 +38,4 @@ bower install csspin
 * CSS File named ```csspin-xxxx.css``` consists css of respective spinners
 
 ## Credits
-Crafted with :heart: at [Webkul](http://webkul.com) HQ
+Crafted with :heart: at [Webkul UXlab](http://design.webkul.com) HQ
