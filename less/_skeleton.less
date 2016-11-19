@@ -1,0 +1,42 @@
+/*Skeleton Spinner*/
+.cp-skeleton{
+	.bounding-box(@boxSize, @boxSize);
+	border-radius: 50%;
+	.border(@boxSize/8, @primaryColor, @transparent, @transparent, @transparent); 
+	animation: cp-skeleton-animate @speed3x linear infinite;
+}
+.cp-skeleton:before{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@boxSize/8, @transparent, @transparent, @transparent, @primaryColor);
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	transform: rotateZ(-30deg);
+}
+.cp-skeleton:after{
+	border-radius: 50%;
+	content: " ";
+	.bounding-box(@boxSize, @boxSize);
+	.border(@boxSize/8, @transparent, @primaryColor, @transparent, @transparent);
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	transform: rotateZ(30deg);
+}
+
+/*Skeleton Spinner Animation*/
+@keyframes cp-skeleton-animate{
+	0%{
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	50%{
+		opacity: .7;
+	}	
+	100%{
+		transform: rotate(360deg);
+		opacity: 1;
+	}
+}
