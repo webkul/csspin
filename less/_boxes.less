@@ -1,0 +1,44 @@
+/*Boxes Spinner*/
+.cp-boxes:before{
+	.bounding-box(@boxSize/2, @boxSize/2);
+	content: " ";
+	background: @secondColor;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: cp-boxes-animate-before @speed3x ease-in-out infinite;
+}
+.cp-boxes:after{
+	.bounding-box(@boxSize/2, @boxSize/2);
+	content: " ";
+	background: @secondColor;
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: cp-boxes-animate-after @speed3x ease-in-out infinite;
+}
+
+/*Boxes Spinner Animation*/
+@keyframes cp-boxes-animate-before{
+	0%{
+		transform: translateX(-20px) rotate(45deg);
+	}	
+	50%{
+		transform: translateX(-7px) rotate(225deg);
+	}
+	100%{
+		transform: translateX(-20px) rotate(45deg);
+	}
+}
+
+@keyframes cp-boxes-animate-after{
+	0%{
+		transform: translateX(20px) rotate(45deg);
+	}	
+	50%{
+		transform: translateX(7px) rotate(-225deg);
+	}
+	100%{
+		transform: translateX(20px) rotate(45deg);
+	}
+}
