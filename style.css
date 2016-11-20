@@ -51,6 +51,7 @@ a:hover{
 	border-radius: 2px;
 	font-family: "Lucida Console", Monaco, monospace;
 	display: inline-block;
+	white-space: pre-wrap;
 }
 
 @media only screen and (max-width: 1024px){
