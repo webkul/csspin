@@ -37,7 +37,7 @@ a:hover{
 .cp-spinner-block{
 	display: inline-block;
 	width: 40%;
-	margin: 10px 20px;
+	margin: 40px 20px;
 }
 .cp-spinner-block span{
 	color: #4a5b6c;
@@ -79,7 +79,7 @@ a:hover{
 	.cp-spinner-block{
 	display: inline-block;
 	width: 30%;
-	margin: 10px 20px;
+	margin: 40px 20px;
 }
 }
 @media only screen and (min-width: 1700px){
@@ -89,6 +89,6 @@ a:hover{
 	.cp-spinner-block{
 	display: inline-block;
 	width: 30%;
-	margin: 10px 20px;
+	margin: 40px 20px;
 }
 }
