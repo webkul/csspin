@@ -12,7 +12,7 @@
 	.bounding-box(@boxSize/2, @boxSize/2);
 	background-color: @secondColor;
 	position: absolute;
-	left: -30px;
+	left: -(@boxSize/8*5);
 	animation: cp-bubble-animate-before @speed3x ease-in-out infinite;
 }
 
@@ -22,7 +22,7 @@
 	.bounding-box(@boxSize/2, @boxSize/2);
 	background-color: @secondColor;
 	position: absolute;
-	right: -30px;
+	right: -(@boxSize/8*5);
 	animation: cp-bubble-animate-after @speed3x ease-in-out infinite;
 }
 
