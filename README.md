@@ -5,7 +5,11 @@ CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code
 Check out [Spinners in Motion](https://webkul.github.io/csspin/)
 
 ## Installation
-Install CSSPIN with **Bower** Package Manager     
+Install CSSPIN with **npm** or **Bower** Package Manager     
+```
+npm install csspin
+```
+
 ```
 bower install csspin
 ```
