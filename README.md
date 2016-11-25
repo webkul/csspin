@@ -39,7 +39,7 @@ bower install csspin
 
 ## How CSS Structure Works?   
 * CSS File named ```csspin.css``` consists CSS of all the spinners
-* CSS File named ```csspin-xxxx.css``` consists css of respective spinners
+* CSS File named ```csspin-xxxx.css``` consists CSS of respective spinners
 
 ## Credits
-Crafted with :heart: at [Webkul UXlab](http://design.webkul.com) HQ
+Crafted with :heart: at [Webkul UXlab](http://design.webkul.com)
