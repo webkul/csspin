@@ -1,10 +1,11 @@
 # CSSPIN
 CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code
 
-Project Using CSSPIN - https://store.webkul.com/Opencart-Point-Of-Sale-System.html
-
 ## Demo
 Check out [Spinners in Motion](https://webkul.github.io/csspin/)
+
+## Project Using CSSPIN
+[Opencart Point of Sale](https://store.webkul.com/Opencart-Point-Of-Sale-System.html)
 
 ## Installation
 Install CSSPIN with **npm** or **Bower** Package Manager     
