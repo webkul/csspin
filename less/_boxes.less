@@ -21,24 +21,24 @@
 /*Boxes Spinner Animation*/
 @keyframes cp-boxes-animate-before{
 	0%{
-		transform: translateX(-20px) rotate(45deg);
+		transform: translateX(-@boxSize/2) rotate(45deg);
 	}	
 	50%{
-		transform: translateX(-7px) rotate(225deg);
+		transform: translateX(-@boxSize/6) rotate(225deg);
 	}
 	100%{
-		transform: translateX(-20px) rotate(45deg);
+		transform: translateX(-@boxSize/2) rotate(45deg);
 	}
 }
 
 @keyframes cp-boxes-animate-after{
 	0%{
-		transform: translateX(20px) rotate(45deg);
+		transform: translateX(@boxSize/2) rotate(45deg);
 	}	
 	50%{
-		transform: translateX(7px) rotate(-225deg);
+		transform: translateX(@boxSize/6) rotate(-225deg);
 	}
 	100%{
-		transform: translateX(20px) rotate(45deg);
+		transform: translateX(@boxSize/2) rotate(45deg);
 	}
 }
