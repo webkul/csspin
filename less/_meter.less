@@ -1,0 +1,28 @@
+/*Meter Spinner*/
+.cp-meter{
+	border-radius: 50%;
+	.border(@boxSize/8, @firstColor, @firstColor ,@firstColor ,@firstColor);
+	.bounding-box(@boxSize, @boxSize);
+}
+
+.cp-meter:before{
+	border-radius: @boxSize/16;
+	content: " ";
+	.bounding-box(@boxSize/8, @boxSize/4);
+	background-color: @firstColor;
+	position: absolute;
+	top: ceil(@boxSize/10);
+	left: @boxSize/3;
+	transform-origin: center bottom;
+	animation: cp-meter-animate-before @speed3x linear infinite;
+}
+
+/*Meter Spinner Animation*/
+@keyframes cp-meter-animate-before{
+  0% {
+    transform: rotate(-45deg);
+  }
+	100%{
+    transform: rotate(315deg);
+  }
+}
