@@ -16,6 +16,7 @@ npm install csspin
 ```
 bower install csspin
 ```
+[![CSSPIN Video] (http://webkul.com/blog/wp-content/uploads/2016/12/csspin-video.png)](https://youtu.be/18uY-YueJeI)
 
 ## Less File Structure 
 ```
