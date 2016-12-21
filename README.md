@@ -1,5 +1,7 @@
 # CSSPIN
-CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code
+CSS Spinners and Loaders - Modular, Customizable and Single HTML Element Code.   
+
+CSSPIN Library has a different set of interactive Pure CSS Loaders and Spinners which are built on the top of LESS Preprocessor. Individual Pure CSS Loader or Spinner can be easily customized and can be embedded with Single HTML Element in your next Dev Project.
 
 ## Demo
 Check out [Spinners in Motion](https://webkul.github.io/csspin/)
